@@ -22,8 +22,7 @@ import retrofit2.Response;
 
 public class WeatherActivity extends AppCompatActivity {
 
-    private TextView cityWeather,temperatureWeather,conditionWeather,humidityWeather
-            ,maxTemperatureWeather,minTemperatureWeather,pressureWeather,windWeather;
+    private TextView cityWeather, temperatureWeather, conditionWeather, humidityWeather, maxTemperatureWeather, minTemperatureWeather, pressureWeather, windWeather;
     private ImageView imageViewWeather;
     private Button search;
     private EditText editText;
@@ -69,21 +68,21 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<OpenWeatherMap> call, Response<OpenWeatherMap> response) {
 
-                if (response.isSuccessful()){
+                if (response.isSuccessful()) {
                     cityWeather.setText(response.body().getName() + " , " + response.body().getSys().getCountry());
                     temperatureWeather.setText(response.body().getMain().getTemp() + " °C");
                     conditionWeather.setText(response.body().getWeather().get(0).getDescription());
                     humidityWeather.setText(" : " + response.body().getMain().getHumidity() + "%");
                     maxTemperatureWeather.setText(" : " + response.body().getMain().getTempMax() + " °C");
                     minTemperatureWeather.setText(" : " + response.body().getMain().getTempMin() + " °C");
-                    pressureWeather.setText(" : " + response.body().getMain().getPressure());
-                    windWeather.setText(" : " + response.body().getWind().getSpeed());
+                    pressureWeather.setText(" : " + response.body().getMain().getPressure() + " hPa");
+                    windWeather.setText(" : " + response.body().getWind().getSpeed() + " m/s");
 
                     String iconCode = response.body().getWeather().get(0).getIcon();
                     Picasso.get().load("https://openweathermap.org/img/wn/" + iconCode + "@2x.png")
                             .placeholder(R.drawable.background_file)
                             .into(imageViewWeather);
-                }else {
+                } else {
                     Toast.makeText(WeatherActivity.this, "City not found, please try again", Toast.LENGTH_LONG).show();
                 }
 

@@ -182,7 +182,7 @@
                     android:id="@+id/textViewMaxTempWeather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=": 25 C"
+                    android:text=": 25 °C"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:layout_marginTop="5dp"/>
@@ -190,7 +190,7 @@
                     android:id="@+id/textViewMinTempWeather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=": 25 C"
+                    android:text=": 25 °C"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:layout_marginTop="5dp"/>
@@ -198,7 +198,7 @@
                     android:id="@+id/textViewPressureWeather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=": 50"
+                    android:text=": 50 hPa"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:layout_marginTop="5dp"/>
@@ -206,7 +206,7 @@
                     android:id="@+id/textViewWindWeather"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=": 5"
+                    android:text=": 5 m/s"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:layout_marginTop="5dp"/>

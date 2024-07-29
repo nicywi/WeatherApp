@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewTemp"
-                android:text="25 C"
+                android:text="25 °C"
                 android:textSize="50sp"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center"/>
@@ -141,7 +141,7 @@
                 android:id="@+id/textViewMaxTemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=": 25 C"
+                android:text=": 25 °C"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:layout_marginTop="5dp"/>
@@ -149,7 +149,7 @@
                 android:id="@+id/textViewMinTemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=": 25 C"
+                android:text=": 25 °C"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:layout_marginTop="5dp"/>
@@ -157,7 +157,7 @@
                 android:id="@+id/textViewPressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=": 50"
+                android:text=": 50 hPa"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:layout_marginTop="5dp"/>
@@ -165,7 +165,7 @@
                 android:id="@+id/textViewWind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=": 5"
+                android:text=": 5 m/s"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:layout_marginTop="5dp"/>

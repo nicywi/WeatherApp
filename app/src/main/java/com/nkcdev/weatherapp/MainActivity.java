@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
                 humidity.setText(" : " + response.body().getMain().getHumidity() + "%");
                 maxTemperature.setText(" : " + response.body().getMain().getTempMax() + " °C");
                 minTemperature.setText(" : " + response.body().getMain().getTempMin() + " °C");
-                pressure.setText(" : " + response.body().getMain().getPressure());
-                wind.setText(" : " + response.body().getWind().getSpeed());
+                pressure.setText(" : " + response.body().getMain().getPressure() + " hPa");
+                wind.setText(" : " + response.body().getWind().getSpeed() + " m/s");
 
                 String iconCode = response.body().getWeather().get(0).getIcon();
                 Picasso.get().load("https://openweathermap.org/img/wn/" + iconCode + "@2x.png")
